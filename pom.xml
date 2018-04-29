@@ -21,16 +21,15 @@
 <!--
         <tomcat.version>8.5.24</tomcat.version>
 -->
-<!--
-        &lt;!&ndash;Spring&ndash;&gt;
+        <!--Spring-->
         <org.springframework-version>5.0.2.RELEASE</org.springframework-version>
--->
+
         <!--Hibernate-->
         <hibernate.version>5.2.17.Final</hibernate.version>
-<!--
-        &lt;!&ndash;Logging&ndash;&gt;
+
+        <!--Logging-->
         <org.slf4j-version>1.7.5</org.slf4j-version>
--->
+        <logback.version>1.2.3</logback.version>
 
 <!--
         &lt;!&ndash;Servlet&ndash;&gt;
@@ -95,20 +94,20 @@
 
     <dependencies>
 
-<!--
-        &lt;!&ndash; Spring &ndash;&gt;
+        <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${org.springframework-version}</version>
             <exclusions>
-                &lt;!&ndash; Exclude Commons Logging in favor of SLF4j &ndash;&gt;
+                <!-- Exclude Commons Logging in favor of SLF4j -->
                 <exclusion>
                     <groupId>commons-logging</groupId>
                     <artifactId>commons-logging</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
+<!--
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -155,8 +154,7 @@
         </dependency>
 -->
 
-<!--
-        &lt;!&ndash; Logging &ndash;&gt;
+        <!-- Logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -170,35 +168,48 @@
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
+            <artifactId>jul-to-slf4j</artifactId>
             <version>${org.slf4j-version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.15</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>javax.mail</groupId>
-                    <artifactId>mail</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>javax.jms</groupId>
-                    <artifactId>jms</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.sun.jdmk</groupId>
-                    <artifactId>jmxtools</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.sun.jmx</groupId>
-                    <artifactId>jmxri</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
             <scope>runtime</scope>
         </dependency>
--->
+        <!--
+                <dependency>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                    <version>${org.slf4j-version}</version>
+                    <scope>runtime</scope>
+                </dependency>
+                <dependency>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                    <version>1.2.15</version>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>javax.mail</groupId>
+                            <artifactId>mail</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>javax.jms</groupId>
+                            <artifactId>jms</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>com.sun.jdmk</groupId>
+                            <artifactId>jmxtools</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>com.sun.jmx</groupId>
+                            <artifactId>jmxri</artifactId>
+                        </exclusion>
+                    </exclusions>
+                    <scope>runtime</scope>
+                </dependency>
+        -->
 
 <!--
         &lt;!&ndash; Servlet &ndash;&gt;
