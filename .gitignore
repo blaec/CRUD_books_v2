@@ -4,6 +4,5 @@ idea.bat
 out
 target
 *.iml
-log
 *.patch
 patch
