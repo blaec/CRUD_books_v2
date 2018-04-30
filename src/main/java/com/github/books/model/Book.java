@@ -84,6 +84,10 @@ public class Book {
         this.readAlready = readAlready;
     }
 
+    public boolean isNew() {
+        return getId() == 0;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
