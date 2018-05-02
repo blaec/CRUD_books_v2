@@ -3,7 +3,7 @@ package com.github.books.service;
 import com.github.books.model.Book;
 import com.github.books.repository.BookDao;
 import org.springframework.stereotype.Service;
-//import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -16,43 +16,43 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-//    @Transactional
+    @Transactional
     public void addBook(Book book) {
         this.bookDao.addBook(book);
     }
 
     @Override
-//    @Transactional
+    @Transactional
     public void updateBook(Book book) {
         this.bookDao.updateBook(book);
     }
 
     @Override
-//    @Transactional
+    @Transactional
     public void removeBook(int id) {
         this.bookDao.removeBook(id);
     }
 
     @Override
-//    @Transactional
+    @Transactional
     public void makeRead(boolean isUpdate, Book book) {
         this.bookDao.makeRead(isUpdate, book);
     }
 
     @Override
-//    @Transactional
+    @Transactional
     public Book getBookById(int id) {
         return this.bookDao.getBookById(id);
     }
 
     @Override
-//    @Transactional
+    @Transactional
     public List<Book> listBooks() {
         return this.bookDao.listBooks();
     }
 
     @Override
-//    @Transactional
+    @Transactional
     public Book getBookByName(String searchName) {
         return this.bookDao.getBookByName(searchName);
     }

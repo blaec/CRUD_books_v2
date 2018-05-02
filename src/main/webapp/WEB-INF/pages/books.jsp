@@ -54,7 +54,7 @@
 
 <c:url var="addAction" value="/books/search"/>
 
-<form:form action="${addAction}" commandName="book">
+<form:form action="${addAction}" modelAttribute="book">
     <table>
         <tr>
             <input type="text" name="searchTitle" id="searchTitle" placeholder="Add book title here..." style="color:#191970;"/>
@@ -82,7 +82,7 @@
                 <td>${book.author}</td>
                 <td><a href="/bookdata/${book.id}">${book.title}</a></td>
                 <td>${book.description}</td>
-                <td>${book.isbn}</td>
+                <td>W${book.isbn}</td>
                 <td>${book.printYear}</td>
                 <td>${book.readAlready}</td>
                 <td><a href="<c:url value='/edit/${book.id}'/>">Edit</a></td>
@@ -125,7 +125,7 @@
 
 <c:url var="addAction" value="/books/add"/>
 
-<form:form action="${addAction}" commandName="book">
+<form:form action="${addAction}" modelAttribute="book">
     <table>
         <c:if test="${!empty book.title}">
             <tr>
