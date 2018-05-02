@@ -31,12 +31,10 @@
         <org.slf4j-version>1.7.5</org.slf4j-version>
         <logback.version>1.2.3</logback.version>
 
-<!--
-        &lt;!&ndash;Servlet&ndash;&gt;
+        <!--Servlet-->
         <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
         <jsp-api.version>2.2</jsp-api.version>
         <jstl.version>1.2</jstl.version>
--->
 
 <!--
         &lt;!&ndash;Test&ndash;&gt;
@@ -202,8 +200,7 @@
                 </dependency>
         -->
 
-<!--
-        &lt;!&ndash; Servlet &ndash;&gt;
+        <!-- Servlet -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -221,7 +218,6 @@
             <artifactId>jstl</artifactId>
             <version>${jstl.version}</version>
         </dependency>
--->
 
 <!--
         &lt;!&ndash; Test &ndash;&gt;
