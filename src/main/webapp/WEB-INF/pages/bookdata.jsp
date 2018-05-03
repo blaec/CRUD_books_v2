@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<a href="index.jsp">Back to Books List</a>
+<a href="/crud/index.jsp">Back to Books List</a>
 <h1>Book Details</h1>
 <table class="tg">
     <tr>

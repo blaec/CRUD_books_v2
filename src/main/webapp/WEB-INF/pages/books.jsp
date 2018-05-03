@@ -9,9 +9,9 @@
     <title>Books Page</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-color:aliceblue;">
+<body>
 
-<a href="index.jsp">Back to Main Page</a>
+<a href="/crud/index.jsp">Back to Main Page</a>
 
 <br/>
 
@@ -22,7 +22,7 @@
 <form:form action="${addAction}" modelAttribute="book">
     <table>
         <tr>
-            <input type="text" name="searchTitle" id="searchTitle" placeholder="Add book title here..." style="color:#191970;"/>
+            <input type="text" name="searchTitle" id="searchTitle" placeholder="Add book title here..."/>
             <input type="submit" value="<spring:message text="Search"/>"/>
         </tr>
     </table>
@@ -45,9 +45,9 @@
             <tr>
                 <td>${book.id}</td>
                 <td>${book.author}</td>
-                <td><a href="/bookdata/${book.id}">${book.title}</a></td>
+                <td><a href="bookdata/${book.id}">${book.title}</a></td>
                 <td>${book.description}</td>
-                <td>W${book.isbn}</td>
+                <td>${book.isbn}</td>
                 <td>${book.printYear}</td>
                 <td>${book.readAlready}</td>
                 <td><a href="<c:url value='/edit/${book.id}'/>">Edit</a></td>

@@ -43,3 +43,7 @@ h3 {
 body {
     background-color: aliceblue;
 }
+
+#searchTitle {
+    color: #191970;
+}
