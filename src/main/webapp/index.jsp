@@ -3,10 +3,11 @@
 <html>
 <head>
     <title>CRUD BOOKS</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-color:aliceblue;">
-<h2 style="color:#191970;">JavaRush Internship</h2>
-<h3 style="color:darkblue;">books CRUD project</h3>
+<body>
+<h2>JavaRush Internship</h2>
+<h3>books CRUD project</h3>
 <br/>
 <a href="books">Proceed to Books List</a>
 <br/>

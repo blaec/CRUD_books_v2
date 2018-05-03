@@ -1,0 +1,45 @@
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #ccc;
+}
+.tg td {
+    font-family: Calibri, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #191970;
+    color: #191970;
+    background-color: #fff;
+}
+.tg th {
+    font-family: Calibri, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: #191970;
+}
+.tg .tg-4eph {
+    background-color: #f9f9f9
+}
+
+h1,h2 {
+    color: #191970;
+}
+
+h3 {
+    color: darkblue;
+}
+
+body {
+    background-color: aliceblue;
+}

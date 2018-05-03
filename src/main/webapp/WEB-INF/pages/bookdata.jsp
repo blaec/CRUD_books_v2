@@ -6,47 +6,12 @@
 <html>
 <head>
     <title>Book</title>
-
-    <style type="text/css">
-        .tg {
-            border-collapse: collapse;
-            border-spacing: 0;
-            border-color: #ccc;
-        }
-        .tg td {
-            font-family: Calibri, sans-serif;
-            font-size: 14px;
-            padding: 10px 5px;
-            border-style: solid;
-            border-width: 1px;
-            overflow: hidden;
-            word-break: normal;
-            border-color: #191970;
-            color: #191970;
-            background-color: #fff;
-        }
-        .tg th {
-            font-family: Calibri, sans-serif;
-            font-size: 14px;
-            font-weight: normal;
-            padding: 10px 5px;
-            border-style: solid;
-            border-width: 1px;
-            overflow: hidden;
-            word-break: normal;
-            border-color: #ffffff;
-            color: #ffffff;
-            background-color: #191970;
-        }
-        .tg .tg-4eph {
-            background-color: #f9f9f9
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body style="background-color:aliceblue;">
-<a href="/books">Back to Books List</a>
-<h1 style="color:#191970;">Book Details</h1>
+<body>
+<a href="index.jsp">Back to Books List</a>
+<h1>Book Details</h1>
 <table class="tg">
     <tr>
         <th width="40">ID</th>
